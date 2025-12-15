@@ -1,0 +1,43 @@
+body 
+{
+    background-image: url('assets/images/CatalystSpaceBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.game-gallery 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    gap: 3rem;
+}
+
+.game-item
+{
+    max-width: 300px;
+    text-align: center;
+}
+
+.game-item img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(193, 27, 211, 0.338);
+    margin-bottom: 0.5rem;
+}
+
+.timeline
+{
+    width: 700px;
+    height: 3px;
+    color:yellow
+}
