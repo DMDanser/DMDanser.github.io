@@ -1,6 +1,12 @@
 const DEFAULT_OUTLINE = "solid";
 const ACTIVE_OUTLINE = "10px solid #3b57e0ff";
 
+const gameDescriptions = 
+{
+    OfficeRumble: "Office Rumble is a game I created with team Lucid Adventures in Unreal Engine with C++. My major contributions on Office Rumble were all character actions, including AI enemy behavior.",
+    GreedyGlutton: "Greedy Glutton is a game I created with team Adao House using Vulkan. My major contributions on Greedy Glutton were collision behaviors, the camera, and models.",
+    Catalyst: "Catalyst is a game I created with team Wish Upon a Wizard in Unity with C#. My major contributions to Catalyst were the Creator Gun, the Bug Guy character, and the entirety of the Moon level."
+}
 function PresentGame(gameId)
 {
     const gameImages = document.querySelectorAll(".gameImage");
@@ -21,6 +27,10 @@ function PresentGame(gameId)
     game.style.outline = ACTIVE_OUTLINE;
 
     game.classList.add("active");
+
+    const gameDescription = document.querySelector(".gameDescription");
+    gameDescription.innerHTML = gameDescriptions[gameId];
+    gameDescription.style.display = "inline-block";
 }
 
 function HighlightGame(gameId)

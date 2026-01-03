@@ -11,6 +11,13 @@ body
     text-align: center;
 }
 
+p
+{
+    text-align: center;
+    max-width: 650px;
+    vertical-align: top;
+}
+
 .gameImage
 {
     max-width: 90%;
@@ -28,7 +35,18 @@ body
     height:360px;
     outline-color:#174855;
     outline: solid;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
+}
+
+.gameDescription
+{
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #3b57e0ff;
+    border: 10px;
+    border-style: solid;
+    border-color: #3b57e0ff;
+    border-radius: 0 0 20px 20px;
 }
 
 h1
