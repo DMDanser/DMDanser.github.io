@@ -31,12 +31,12 @@
 
   </div>
   <span>
-  <img class="gameImage" src="assets/images/OfficeRumble.png" onmouseover="PlayVideo()">
-  <img class="gameImage" src="assets/images/Catalyst.png">
-  <img class="gameImage" src="assets/images/GreedyGlutton.png">
+  <img onmouseleave="UnhighlightGame(this.id)" onmouseenter="HighlightGame(this.id)" onclick="PresentGame(this.id)" class="gameImage" id="OfficeRumble" src="assets/images/OfficeRumble.png" onmouseover="PlayVideo()">
+  <img onmouseleave="UnhighlightGame(this.id)" onmouseenter="HighlightGame(this.id)" onclick="PresentGame(this.id)" class="gameImage" id="Catalyst" src="assets/images/Catalyst.png">
+  <img onmouseleave="UnhighlightGame(this.id)" onmouseenter="HighlightGame(this.id)" onclick="PresentGame(this.id)" class="gameImage" id="GreedyGlutton" src="assets/images/GreedyGlutton.png">
   </span>
-    <video class="gameVideo" controls src="assets/videos/OfficeRumble_Ultimates.mp4"></video>
-
+    <video class="gameVideo" controls hidden></video>
+    <p class="gameDescription"></p>
   <br>
   <script src="script.js"></script>
 </body>

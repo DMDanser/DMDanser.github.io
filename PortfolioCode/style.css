@@ -17,12 +17,13 @@ body
     width: 200px;
     outline-color:#174855;
     outline: solid;
-    margin: 10px;
+    margin: 10px 10px 5px 10px;
 }
+
 .gameVideo
 {
     width: 640px;
-    height:360ox;
+    height:360px;
     outline-color:#174855;
     outline: solid;
     margin: 10px;
