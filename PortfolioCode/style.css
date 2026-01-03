@@ -19,6 +19,14 @@ body
     outline: solid;
     margin: 10px;
 }
+.gameVideo
+{
+    width: 640px;
+    height:360ox;
+    outline-color:#174855;
+    outline: solid;
+    margin: 10px;
+}
 
 h1
 {
