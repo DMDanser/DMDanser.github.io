@@ -1,6 +1,6 @@
-body 
+body
 {
-    background-image: url('assets/images/CatalystSpaceBackground.png');
+    background-color:darkslategrey;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,33 +11,71 @@ body
     text-align: center;
 }
 
-.game-gallery 
+.gameImage
 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-    gap: 3rem;
+    height: 200px;
+    width: 200px;
+    outline-color:#174855;
+    outline: solid;
+    margin: 10px;
 }
 
-.game-item
+h1
 {
-    max-width: 300px;
-    text-align: center;
+    font-family: Perpetua;
+    font-style: oblique;
+    color:pink;
 }
 
-.game-item img
+h2
 {
-    width: 250px;
-    height: 250px;
-    border-radius: 0px;
-    box-shadow: 0 4px 6px rgba(193, 27, 211, 0.338);
-    margin-bottom: 0.5rem;
+    color: pink;
+}
+
+h3
+{
+    border-radius: 10px;
+    margin: 0 50px 0 50px;
+    padding: 10px 40px 10px 40px;
+    color:rgb(255, 255, 255);
+    font-family:monospace;
+    outline: solid rgb(35, 62, 62);
+    background-color: rgba(69, 114, 114, 0.717);
 }
 
 .timeline
 {
+    display: flex;
+    justify-content: space-between;
     width: 700px;
     height: 3px;
-    color:yellow
+    background-color:rgb(227, 108, 225);
+    margin: 40px auto;
+    position: relative;
+}
+
+.timeline-item
+{
+    width: 5px;
+    height: 5px;
+    background-color:rgb(41, 133, 169);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(var(--pos) / 365 * 100%);
+}
+
+.timeline-item:hover
+{
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-98%);
+    background-image: var(--img),
+    radial-gradient(circle at 30% 30%, #ffffff 0%, #41a3d9 60%, #1f5f70 100%);
+    background-size:contain;
+    background-position: center;
+    outline: auto;
+    
+    transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease;
 }
