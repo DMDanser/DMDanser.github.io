@@ -5,7 +5,7 @@ body
     background-repeat: no-repeat;
     background-position: center;
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
@@ -13,6 +13,7 @@ body
 
 .gameImage
 {
+    max-width: 90%;
     height: 200px;
     width: 200px;
     outline-color:#174855;
@@ -22,6 +23,7 @@ body
 
 .gameVideo
 {
+    max-width: 100%;
     width: 640px;
     height:360px;
     outline-color:#174855;
@@ -34,11 +36,13 @@ h1
     font-family: Perpetua;
     font-style: oblique;
     color:pink;
+    text-align: center;
 }
 
 h2
 {
     color: pink;
+        text-align: center;
 }
 
 h3
@@ -50,6 +54,7 @@ h3
     font-family:monospace;
     outline: solid rgb(35, 62, 62);
     background-color: rgba(69, 114, 114, 0.717);
+    text-align: center;
 }
 
 .timeline
