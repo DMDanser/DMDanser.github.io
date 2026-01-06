@@ -121,3 +121,12 @@ h3
     
     transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease;
 }
+
+.thirdPartyLink
+{
+    width: 1px;
+    max-width: 10vw;
+    position:absolute;
+    left:0vw;
+    bottom:0vw;
+}
