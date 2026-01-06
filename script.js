@@ -1,5 +1,5 @@
 const DEFAULT_OUTLINE = "solid";
-const ACTIVE_OUTLINE = "10px solid #3b57e0ff";
+const ACTIVE_OUTLINE = "10px solid rgba(129, 69, 130, 1)";
 
 const gameDescriptions = 
 {
