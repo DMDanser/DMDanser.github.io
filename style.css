@@ -51,7 +51,7 @@ p
     background-color: rgb(129, 69, 130);
     border-radius: 0 0 3vw 3vw;
     font-size: 1.8vw;
-    padding: 0 0 1vw 0;
+    padding: 1vw 0 1vw 0;
 }
 
 .aboutMe
@@ -131,9 +131,10 @@ h3
 .linkContainer
 {
     display: flex;
-    position: absolute;
+    position: relative;
     left:0vw;
     bottom:0vw;
+    margin-top: 5vw;
 }
 .linkItem
 {
