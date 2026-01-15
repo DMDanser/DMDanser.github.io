@@ -1,5 +1,7 @@
-const DEFAULT_OUTLINE = "solid";
-const ACTIVE_OUTLINE = "10px solid rgba(129, 69, 130, 1)";
+const DEFAULT_OUTLINE = "0.2vw solid";
+const ACTIVE_OUTLINE = "0.2vw solid white";
+
+const ctx = document.querySelector("body").getContext("2d");
 
 const gameDescriptions = 
 {
@@ -31,6 +33,7 @@ function PresentGame(gameId)
     const gameDescription = document.querySelector(".gameDescription");
     gameDescription.innerHTML = gameDescriptions[gameId];
     gameDescription.style.display = "inline-block";
+    gameDescription.removeAttribute("hidden");
 }
 
 function HighlightGame(gameId)
