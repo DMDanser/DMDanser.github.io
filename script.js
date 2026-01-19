@@ -19,14 +19,9 @@ function PresentGame(gameId)
 
     const video = document.querySelector(".gameVideo");
     video.setAttribute("src", "assets/videos/" + gameId + "_video.mp4");
-    video.style.outline = ACTIVE_OUTLINE;
-    video.style.borderStyle = "solid";
-    video.style.borderColor = "black";
-    video.style.borderWidth = "0 5px 0 5px";
     video.removeAttribute("hidden");
 
     const game = document.getElementById(gameId);
-    game.style.outline = ACTIVE_OUTLINE;
 
     game.classList.add("active");
 

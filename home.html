@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMDanser GitHub Page</title>
+
+    <!--link to the .css file-->
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+<header class="topBar">
+  <a class="topBarItem">Home</a>
+  <a class="topBarItem" href="games.html">Games</a>
+  <a class="topBarItem" href="contact.html">Contact</a>
+</header>
+  <h1 class="title">The Portfolio of Dylan M Danser</h1>
+  <br>
+  <img class="headshot" src="assets/images/ProfessionalHeadshot.jpeg" height="300vw">
+  <br>  
+  <h3 class="aboutMe-head" style="display: inline-block;">
+      <strong>About Me</strong>
+    </h3>
+    <h3 class="aboutMe-body">
+      I achieved my Bachelor's in Computer Science with a major in Game Development from Full Sail University. I love making videogames and generally writing code. 
+      I'm a dad of 2 wonderful kids that I had during my time at Full Sail University. I'm driven by my own passion for code, and more so by my wife and kids. My major goal
+      is to produce unique and experimental software; preferrably in the video game industry.
+    </h3>
+
+  <div class="timeline">
+    <div class="timeline-item" style="--pos: 90;--img: url('assets/images/Catalyst.png');"><h1></h1></div>
+    <div class="timeline-item" style="--pos: 240;--img: url('assets/images/GreedyGlutton.png');"></div>
+    <div class="timeline-item" style="--pos: 300;--img: url('assets/images/OfficeRumble.png');"></div>
+
+  </div>
+  <section class="gamePanel">
+    <h2>Select Game</h2>
+    <div class="gameContainer">
+      <img onmouseleave="UnhighlightGame(this.id)" alt="Office Rumble game image" onmouseenter="HighlightGame(this.id)" onclick="PresentGame(this.id)" 
+     class="gameImage" id="OfficeRumble" src="assets/images/OfficeRumble.png">
+
+      <img onmouseleave="UnhighlightGame(this.id)" alt="Catalyst game image" onmouseenter="HighlightGame(this.id)" onclick="PresentGame(this.id)" 
+     class="gameImage" id="Catalyst" src="assets/images/Catalyst.png">
+
+      <img onmouseleave="UnhighlightGame(this.id)" alt="Greedy Glutton game image" onmouseenter="HighlightGame(this.id)" onclick="PresentGame(this.id)" 
+     class="gameImage" id="GreedyGlutton" src="assets/images/GreedyGlutton.png">
+    </div> 
+     <video class="gameVideo" controls hidden></video>
+      <p hidden class="gameDescription"></p>
+  </section>
+  <br>
+  <footer>
+  <div class="linkContainer">
+    <a href="https://www.linkedin.com/in/dylan-m-danser-160534223/">
+      <img style="max-width: 10vw; max-height: 10vw;" src="assets/images/logo_linkedin.png"> 
+    </a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

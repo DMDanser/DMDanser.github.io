@@ -43,6 +43,7 @@ body
         grid-template-areas: 
         "gameIcon title authorIcon"
         "author author author"
+        "game"
         "description description description";
         max-width: 80vw;
         margin: 3vw 10vw;
